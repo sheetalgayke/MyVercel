@@ -1,40 +1,6 @@
+import React from 'react';
 
-export default function Home() {
-  return (
-    <main style={styles.main}>
-      <div style={styles.topBar}>
-        <span>Get started by editing&nbsp;<code style={styles.code}>app/page.js</code></span>
-        <span style={styles.vercel}>By <b>▲ Vercel</b></span>
-      </div>
-
-      <h1 style={styles.title}>NEXT.<span style={styles.js}>JS</span></h1>
-
-      <div style={styles.grid}>
-        <a href="https://nextjs.org/docs" style={styles.card}>
-          <h3>Docs →</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" style={styles.card}>
-          <h3>Learn →</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a href="https://nextjs.org/templates" style={styles.card}>
-          <h3>Templates →</h3>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a href="https://vercel.com/new" style={styles.card}>
-          <h3>Deploy →</h3>
-          <p>Instantly deploy your Next.js site to a shareable URL with Vercel.</p>
-        </a>
-      </div>
-    </main>
-  );
-}
-
-const styles = {
+const styles: Record<string, React.CSSProperties> = {
   main: {
     backgroundColor: '#000',
     color: '#fff',
@@ -82,3 +48,45 @@ const styles = {
     transition: 'transform 0.2s ease',
   },
 };
+
+export default function Home() {
+  return (
+    <main style={styles.main}>
+      <div style={styles.topBar}>
+        <span>
+          Get started by editing&nbsp;
+          <code style={styles.code}>app/page.tsx</code>
+        </span>
+        <span style={styles.vercel}>
+          By <b>▲ Vercel</b>
+        </span>
+      </div>
+
+      <h1 style={styles.title}>
+        NEXT.<span style={styles.js}>JS</span>
+      </h1>
+
+      <div style={styles.grid}>
+        <a href="https://nextjs.org/docs" style={styles.card}>
+          <h3>Docs →</h3>
+          <p>Find in-depth information about Next.js features and API.</p>
+        </a>
+
+        <a href="https://nextjs.org/learn" style={styles.card}>
+          <h3>Learn →</h3>
+          <p>Learn about Next.js in an interactive course with quizzes!</p>
+        </a>
+
+        <a href="https://nextjs.org/templates" style={styles.card}>
+          <h3>Templates →</h3>
+          <p>Explore the Next.js 13 playground.</p>
+        </a>
+
+        <a href="https://vercel.com/new" style={styles.card}>
+          <h3>Deploy →</h3>
+          <p>Instantly deploy your Next.js site to a shareable URL with Vercel.</p>
+        </a>
+      </div>
+    </main>
+  );
+}
